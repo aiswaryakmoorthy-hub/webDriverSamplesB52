@@ -51,7 +51,7 @@ public class UploadImageExtentReportTest {
 		
 	}
 	
-@Test
+@Test(enabled=false)
   public void fileuploadTest() {
     
 	  
@@ -68,7 +68,7 @@ public class UploadImageExtentReportTest {
 	  
 	}
 
-@Test (retryAnalyzer=MyRetry.class)
+@Test (retryAnalyzer=MyRetry.class ,enabled=false)
 public void downloadTest() {
 	
 	  extentTest=extentReports.createTest("File download test");
@@ -82,7 +82,7 @@ public void downloadTest() {
 }
 
 
-@Test(enabled=false)
+@Test
 
 public void shaddowDOMTest() {
 	
@@ -100,7 +100,7 @@ public void shaddowDOMTest() {
 
 
 
-@Test (enabled=false)
+@Test 
 
 public void softAssert()
 
